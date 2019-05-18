@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <!--//别名通过name=“”-->
+    <bean id="bean1" name="bean1_1,bean1_2" class="com.imooc.spring.ioc.Bean1"/>
+    <!--别名或者通过alias标签，只支持一个别名-->
+    <alias name="bean1" alias="bean1_3"/>
+
+
+
+
+    <bean factory-method="getBean2"
+          class="com.imooc.spring.ioc.Bean2Factory"
+        id="bean2"/>
+
+
+
+    <bean class="com.imooc.spring.ioc.Bean3Factory"  id="bean3Factory"/>
+    <bean factory-bean="bean3Factory"
+          class="com.imooc.spring.ioc.Bean3"
+          id="bean3" factory-method="getBean3"/>
+
+
+</beans>
