@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shu"
+    tools:context=".activity.Time_study_1">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_between_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hhh"
+                android:layout_marginRight="27dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/name_li"
+            android:textSize="15dp"
+            android:layout_marginTop="70dp"
+            >
+
+            <TextView
+                android:id="@+id/username_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=",你好"
+                android:textSize="15dp"
+              />
+        </LinearLayout>
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="@color/blue_button"
+            android:textSize="60dip" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_between"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/common_button_style"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"
+            android:text="开始" />
+
+
+        <Button
+            android:id="@+id/btnStop"
+            style="@style/common_button_style"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="结束" />
+
+        <Button
+            android:id="@+id/btnpc"
+            style="@style/common_button_style"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnReset"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="暂停"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/common_button_style"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="45dp"
+            android:text="重置"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btnStop"
+            android:layout_marginTop="15dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/timesum"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:layout_marginTop="295dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="320dp"
+                    android:text="学习内容(填写)："
+                    android:textColor="@color/text_topbar"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/textsum"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="320dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

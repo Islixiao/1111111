@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/can">
+
+    <ImageView
+        android:id="@+id/register_logotea"
+        android:layout_width="74dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/teacher" />
+    <EditText
+        android:id="@+id/register_nametea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/register_first_passwordtea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:alpha="0.8"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/register_second_passwordtea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:hint="请确认密码"
+        android:inputType="numberPassword" />
+    <EditText
+        android:id="@+id/register_first_nametea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="真实姓名"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/register_first_tidtea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:hint="教职工号"
+        android:inputType="text" />
+    <!--<EditText
+        android:id="@+id/register_first_colltea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="学院"
+        android:inputType="text" />-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:id="@+id/register_first_collegetea"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/college"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/register_first_majortea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="专业"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/register_confirmtea"
+        android:layout_width="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        style="@style/common_button_style"
+        android:text="确认"/>
+
+
+</LinearLayout>

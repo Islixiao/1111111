@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textSize="25dp"
+            android:textColor="@color/text_topbar"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/edtusername"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="真名："
+            android:textSize="25dp"
+            android:textColor="@color/text_topbar"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/edtrealname"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号："
+            android:textSize="25dp"
+            android:textColor="@color/text_topbar"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/edtsid"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学院："
+            android:textSize="25dp"
+            android:textColor="@color/text_topbar"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/edtcollege"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业："
+            android:textSize="25dp"
+            android:textColor="@color/text_topbar"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/edtmajor"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="班级："
+            android:textColor="@color/text_topbar"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/edtclass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="入学年份："
+            android:textColor="@color/text_topbar"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/edtyear"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_line"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

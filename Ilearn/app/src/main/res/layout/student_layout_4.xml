@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/ka">
+
+    <!-- 学生查询界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_stu">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI学习"
+            android:textSize="35sp"
+            android:textColor="@color/bg_black"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:text="Hi~ 同学:"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="110dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhong"
+        android:layout_below="@id/top_stu">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/zhong">
+
+
+        <Button
+            android:id="@+id/student_activity_timeInfo"
+            style="@style/common_button_style"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="今日时长" />
+        <Button
+            android:id="@+id/student_activity_selectInfo"
+            style="@style/common_button_style"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_activity_timeInfo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="查询个人信息" />
+
+
+        <Button
+            android:id="@+id/student_activity_changePassword"
+            style="@style/common_button_style"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_activity_selectInfo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="修改密码" />
+        <Button
+            android:id="@+id/student_activityinfo"
+            style="@style/common_button_style"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_activity_changePassword"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="修改个人信息" />
+
+    </RelativeLayout>
+</RelativeLayout>
