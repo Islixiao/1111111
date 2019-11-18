@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/student_photo"/>
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入账户" />
+
+    <EditText
+        android:id="@+id/register_first_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/register_second_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请确认密码"
+        android:inputType="numberPassword" />
+    <Button
+        android:id="@+id/register_confirm"
+        android:layout_width="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        style="@style/common_button_style"
+        android:text="确认"/>
+
+
+</LinearLayout>

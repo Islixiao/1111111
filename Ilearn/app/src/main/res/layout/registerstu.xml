@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/can">
+
+    <ImageView
+        android:id="@+id/register_logostu"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/student_photo"/>
+
+
+    <EditText
+        android:id="@+id/register_namestu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:alpha="0.8"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/register_first_passwordstu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/register_second_passwordstu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="请确认密码"
+        android:inputType="numberPassword" />
+    <EditText
+        android:id="@+id/register_first_namestu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:hint="真实姓名"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/register_first_sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:hint="学号"
+        android:inputType="number" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_box"
+        android:alpha="0.8"
+        android:id="@+id/register_first_collegestu"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/college"
+        android:gravity="center"
+        />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <EditText
+          android:id="@+id/register_first_majorstu"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="34dp"
+          android:layout_marginRight="2dp"
+          android:layout_marginTop="5dp"
+          android:background="@drawable/input_box"
+          android:alpha="0.8"
+          android:gravity="center"
+          android:hint="专业"
+          android:inputType="text" />
+      <EditText
+      android:id="@+id/register_first_classstu"
+      android:layout_width="153dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
+      android:background="@drawable/input_box"
+      android:alpha="0.8"
+      android:gravity="center"
+      android:hint="班级"
+      android:inputType="text" />
+  </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_first_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="入学年份(例2017)"
+        android:inputType="text" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+    <Button
+        android:id="@+id/register_confirmstu"
+        style="@style/common_button_style"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="140dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="确认" />
+</LinearLayout>
+
+
+
+
+</LinearLayout>

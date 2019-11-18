@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AI学习</string>
+    <string name="confirm">确定</string>
+    <string name="sure">登录</string>
+    <string name="please_password">请输入密码</string>
+    <string name="please_account">请输入账户</string>
+    <string name="sure_password">请确定密码</string>
+</resources>

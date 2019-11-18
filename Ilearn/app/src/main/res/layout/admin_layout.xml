@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ka"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <!-- 管理员管理界面-->
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI学习"
+        android:textSize="40sp"
+        android:textColor="@color/bg_black"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:text="Hi~ 管理员"
+        android:layout_marginLeft="5dp"
+        android:textSize="25sp" />
+
+    <com.example.pc.ilearn.tools.RoundImageView
+        android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:src="@drawable/admin_photo" />
+
+
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/admin_activity_stu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="管理学生信息"/>
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/admin_activity_tea"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/admin_activity_stu"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center"
+        android:text="管理教师信息"/>
+
+
+
+</RelativeLayout>

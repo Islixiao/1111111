@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cap">
+
+    <EditText
+        android:id="@+id/add_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="姓名"
+        android:textColor="@color/bg_black"/>
+
+    <EditText
+        android:textColor="@color/bg_black"
+        android:id="@+id/add_edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="用户名"
+        android:layout_below="@id/add_edit_name"/>
+    <EditText
+        android:textColor="@color/bg_black"
+        android:id="@+id/add_edit_college"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="学院"
+        android:layout_below="@id/add_edit_username"/>
+
+
+
+    <EditText
+        android:textColor="@color/bg_black"
+        android:id="@+id/add_edit_tid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="教职工号"
+        android:layout_below="@id/add_edit_college"/>
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_below="@id/add_edit_tid"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/add_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="默认密码123456"
+        android:layout_below="@id/add_edit_tid"/>
+
+</RelativeLayout>

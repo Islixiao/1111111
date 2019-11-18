@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/can"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="请输入账号密码"
+        android:textColor="@color/bg_black"
+        android:textSize="33dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="80dp"
+        android:text="欢迎您，老师"
+        android:textColor="@color/bg_black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/activity_main_name_input_tea"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/activity_main_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="50dp"
+        android:alpha="0.8"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入用户名"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/input_box_left_padding"
+        android:textColor="@color/grey_text" />
+
+    <EditText
+        android:id="@+id/activity_main_input_tea"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:alpha="0.8"
+        android:background="@drawable/input_box"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/input_box_left_padding"
+        android:textColor="@color/grey_text" />
+
+
+    <Button
+        android:id="@+id/login_tea"
+        style="@style/common_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tt3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="登录" />
+
+    <LinearLayout
+        android:layout_width="479dp"
+        android:layout_height="162dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/register_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="170dp"
+            android:alpha="0.8"
+            android:background="@color/gray_bg"
+            android:text="注册"
+            android:textColor="@color/blue_text"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/forgetNum_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray_bg"
+            android:alpha="0.8"
+            android:text="忘记密码?"
+            android:textColor="@color/blue_text"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

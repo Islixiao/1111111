@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pc.ilearn">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".tools.Admin_Activity_db">
+<activity android:name=".tools.AddDatatea"/>
+        <activity android:name=".tools.AlterDatatea"/>
+        <activity android:name=".activity.Admin_Activitytea"/>
+        <activity android:name=".tools.AlterData"/>
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tools.AddData"/>
+        <activity android:name=".activity.Admin_Activitystu"/>
+        <activity android:name=".activity.PasswordActivity"/>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.AdvertiseActivity" />
+        <activity android:name=".activity.StudentLoginActivity"/>
+        <activity android:name=".activity.StudentRegister"/>
+        <activity android:name=".activity.Register"/>
+        <activity android:name=".activity.main_Activity"/>
+        <activity android:name=".activity.TeacherActivity"/>
+        <activity android:name=".activity.TeacherLoginActivity"/>
+        <activity android:name=".activity.TeacherRegister"/>
+        <activity android:name=".activity.AdminActivity"/>
+        <activity android:name=".activity.AdminLoginActivity"/>
+        <activity android:name=".activity.PeopleSingleActivity"/>
+        <activity android:name=".activity.QueayStudentActivity"/>
+        <activity android:name=".activity.PeopleActivity"/>
+        <activity android:name=".activity.main_tea_Activity"/>
+        <activity android:name=".activity.PeopleteaActivity"/>
+        <activity android:name=".activity.TeacherInfoActivity"/>
+        <activity android:name=".activity.CarryTeacherActivity"/>
+
+
+
+    </application>
+
+</manifest>
