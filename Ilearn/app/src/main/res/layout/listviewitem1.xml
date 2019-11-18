@@ -4,7 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+<<<<<<< HEAD
     <TextView android:id="@+id/_id"
+=======
+    <TextView android:id="@+id/tv_id"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -13,7 +17,11 @@
         android:textSize="20sp"/>
 
 
+<<<<<<< HEAD
     <TextView android:id="@+id/_name"
+=======
+    <TextView android:id="@+id/tv_name"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -22,7 +30,11 @@
         android:textSize="20sp"/>
 
 
+<<<<<<< HEAD
     <TextView android:id="@+id/_time"
+=======
+    <TextView android:id="@+id/tv_time"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"

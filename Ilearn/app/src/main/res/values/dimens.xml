@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <resources><!--定义尺寸布局适配-->
+=======
+<resources>
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>

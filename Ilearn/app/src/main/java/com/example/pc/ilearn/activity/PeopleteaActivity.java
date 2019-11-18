@@ -10,6 +10,13 @@ import android.widget.EditText;
 import com.example.pc.ilearn.R;
 import com.example.pc.ilearn.tools.myOverDatabaseHelper;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 public class PeopleteaActivity extends AppCompatActivity {
     private myOverDatabaseHelper dbHelper;
 

@@ -45,8 +45,14 @@
         </LinearLayout>
         <Chronometer
             android:id="@+id/chronometer"
+<<<<<<< HEAD
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+=======
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
             android:layout_marginTop="0dp"
             android:gravity="center"
             android:textColor="@color/blue_button"
@@ -98,7 +104,12 @@
             android:layout_alignTop="@+id/btnReset"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
+<<<<<<< HEAD
             android:text="暂停" />
+=======
+            android:text="暂停"
+            tools:ignore="NotSibling" />
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
         <Button
             android:id="@+id/btnReset"
@@ -144,7 +155,11 @@
                     android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="320dp"
+<<<<<<< HEAD
                     android:ems="20" />
+=======
+                    android:ems="10" />
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
             </LinearLayout>
 
         </RelativeLayout>

@@ -10,6 +10,13 @@ import android.widget.Toast;
 
 import com.example.pc.ilearn.R;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 public class TeacherActivity extends AppCompatActivity {
 
     private Button Info1,Info2;

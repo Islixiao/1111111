@@ -20,7 +20,11 @@
                android:layout_height="wrap_content"
                android:layout_weight="1"
                android:gravity="center_horizontal"
+<<<<<<< HEAD
                android:text="次序"
+=======
+               android:text="ID"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                android:textSize="20sp" />
 
            <TextView

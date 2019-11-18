@@ -2,5 +2,9 @@
 <shape
   xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="20.0px" />
+<<<<<<< HEAD
     <solid android:color="@color/red_dark" />
+=======
+    <solid android:color="@color/blue_fashion" />
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 </shape>

@@ -1,6 +1,13 @@
 package com.example.pc.ilearn.entity;
 
+<<<<<<< HEAD
 
+=======
+/**
+ * 保存学生信息的实体类
+ * Created by he on 2016/10/1.
+ */
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 public class Student {
 
 
@@ -12,6 +19,7 @@ public class Student {
     private String name;
     private String college;
     private String major;
+<<<<<<< HEAD
     private String clas;//class
     private String rxny;//studentContent学习内容
     //private Integer sid;
@@ -27,6 +35,13 @@ public class Student {
         this.enterTime = enterTime;
     }
 
+=======
+    private String clas;
+    private String rxny;
+    //private Integer sid;
+    private String sid;
+    private String id;
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     public String getId() {
         return id;
     }
@@ -35,11 +50,17 @@ public class Student {
         this.id = id;
     }
 
+<<<<<<< HEAD
     public Student( ) {
 
    // public Student( String enterTime,String id, String sid, String username, String password, String password_checked, String name, String college, String major) {
 
         this.enterTime=enterTime;
+=======
+
+    public Student(String id, String sid, String username, String password, String password_checked, String name, String college, String major) {
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         this.sid=sid;
         this.id=id;
         this.username=username;

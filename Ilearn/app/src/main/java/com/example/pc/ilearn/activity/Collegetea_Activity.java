@@ -10,16 +10,35 @@ import android.view.ViewGroup;
 
 import com.example.pc.ilearn.R;
 import com.github.mikephil.charting.charts.BarChart;
+<<<<<<< HEAD
+=======
+import com.github.mikephil.charting.components.XAxis;
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 import com.github.mikephil.charting.data.BarEntry;
 import com.example.pc.ilearn.tools.BarChartManager;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 
 
 public class Collegetea_Activity extends Fragment {
     private BarChart barChart1;
 
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+
+public class Collegetea_Activity extends Fragment {
+    private BarChart barChart1;
+    private XAxis xAxis;
+/*
+    private SQLiteDatabase db;
+    myOverDatabaseHelper helper;
+    private ArrayList<PeopleSingle> listData;
+    private DiaryAdapter adapter;*/
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

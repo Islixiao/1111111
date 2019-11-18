@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <item
         android:title="开始学习"
         android:id="@+id/id1"
+=======
+
+
+    <item
+        android:title="开始学习"
+        android:id="@+id/id1"
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         />
     <item
         android:id="@+id/id2"

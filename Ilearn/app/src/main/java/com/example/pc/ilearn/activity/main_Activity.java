@@ -57,11 +57,20 @@ public class main_Activity extends AppCompatActivity {
         bundle.putString("clas",clas);
         bundle.putString("year",year);
         fragment4.setArguments(bundle);
+<<<<<<< HEAD
         //把参数传递给fragment1,2，       activity-->fragment
         Bundle bundle1 = new Bundle();
         bundle1.putString("data",data);
         timeActivity1.setArguments(bundle1);
         poster_study_2.setArguments(bundle1);
+=======
+        //把参数传递给fragment1，       activity-->fragment
+        Bundle bundle1 = new Bundle();
+        bundle1.putString("data",data);
+        timeActivity1.setArguments(bundle1);
+
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
         getSupportFragmentManager().beginTransaction().replace(R.id.mainview,timeActivity1).show(timeActivity1).addToBackStack(null).commit();
         bottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv);

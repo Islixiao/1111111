@@ -12,13 +12,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.pc.ilearn.R;
+<<<<<<< HEAD
 import com.example.pc.ilearn.entity.Teacher;
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 import com.example.pc.ilearn.tools.myOverDatabaseHelper;
 
 
 public class PasswordActivity extends AppCompatActivity {
 
     private EditText mPwd_old;
+<<<<<<< HEAD
     private EditText myh;
     private EditText mPwd_new;
     private EditText mPwdCheck;
@@ -27,18 +31,31 @@ public class PasswordActivity extends AppCompatActivity {
     public myOverDatabaseHelper dbHelper;
 
 
+=======
+    private EditText mPwd_new;
+    private EditText mPwdCheck;
+    private Button mSureButton;    //确定按钮
+    public myOverDatabaseHelper dbHelper;
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.change_password_layout);
+<<<<<<< HEAD
         Bundle bundle=this.getIntent().getExtras();
         final String num=bundle.getString("num");
 
         myh=findViewById(R.id.yonghu);
+=======
+        dbHelper = new myOverDatabaseHelper(this);
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         mPwd_old = findViewById(R.id.password_old);
         mPwd_new = findViewById(R.id.change_password);
         mPwdCheck = findViewById(R.id.change_password_second_password);
         mSureButton = findViewById(R.id.sure);
+<<<<<<< HEAD
         dbHelper = new myOverDatabaseHelper(this);
         mSureButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -115,6 +132,39 @@ public class PasswordActivity extends AppCompatActivity {
                                 Intent intent=new Intent(PasswordActivity.this,StudentLoginActivity.class);
                                 startActivity(intent);
 
+=======
+
+        //接收参数data
+        Bundle bundl = this.getIntent().getExtras();
+        final String username = bundl.getString("data");
+        final String num = bundl.getString("num");
+        final String S="2";
+        mSureButton.setOnClickListener(new View.OnClickListener() {
+
+            String xin=mPwd_new.getText().toString();
+            String check=mPwdCheck.getText().toString();
+            public void onClick(View v) {
+                SQLiteDatabase db = dbHelper.getWritableDatabase();
+                String old=mPwd_old.getText().toString();
+
+               if(num.equals(S)) {
+                   Cursor cursor = db.rawQuery("select username,password from student  where username=?", new String[]{username});
+                   if (cursor.moveToNext()) {
+                       String passold = cursor.getString(cursor.getColumnIndex("password"));
+                       if (old.equals(passold)) {
+                           if (xin.equals(check) ) {
+                               db.beginTransaction();
+                               db.execSQL("update  student set password=? where username=?", new String[]{xin, username});
+                               db.setTransactionSuccessful();
+                               db.endTransaction();
+
+                               Toast.makeText(PasswordActivity.this, "修改成功", Toast.LENGTH_LONG).show();
+                                Intent intent=new Intent(PasswordActivity.this,StudentLoginActivity.class);
+                                startActivity(intent);
+                           } else {
+                               Toast.makeText(PasswordActivity.this, "两次密码不一致", Toast.LENGTH_LONG).show();
+                           }
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                        } else {
                            Toast.makeText(PasswordActivity.this, "旧密码不正确", Toast.LENGTH_LONG).show();
                        }
@@ -145,7 +195,11 @@ public class PasswordActivity extends AppCompatActivity {
                 }
 
                }
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 
             }

@@ -23,6 +23,10 @@ public class StudentRegister extends Activity {
     protected EditText et3;//密码二
     protected EditText et4;//姓名
     protected EditText et5;//学号
+<<<<<<< HEAD
+=======
+    protected TextView et6_1;//学院
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     protected Spinner et6;
     private String college=null;
     protected EditText et7;//专业
@@ -92,13 +96,26 @@ public class StudentRegister extends Activity {
                     if (password.equals(password_checked)) {
                        // Cursor cursor = db.rawQuery("select username from admin where username=? ", new String[]{username});
                        Cursor cursor = db.rawQuery("select username from student where username=? ", new String[]{username});
+<<<<<<< HEAD
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                         //用户是否存在
                         if (cursor.moveToNext()) {
                             Toast.makeText(StudentRegister.this, "该用户已存在", Toast.LENGTH_SHORT).show();
                         } else {
+<<<<<<< HEAD
                                 db.execSQL("insert into student(username,password, sid,name,college, major, clas,logintime)values(?,?,?,?,?,?,?,?)", new String[]{username, password, sid, realname, college, major, clas, time});
                                 Toast.makeText(StudentRegister.this, "注册成功", Toast.LENGTH_SHORT).show();
                                 finish();
+=======
+                            //db.execSQL("insert into admin(username,password)values(?,?)", new String[]{username,password});
+
+                            db.execSQL("insert into student(username,password, sid,name,college, major, clas,logintime)values(?,?,?,?,?,?,?,?)", new String[]{username,password,sid, realname,college, major, clas,time});
+                            Toast.makeText(StudentRegister.this, "注册成功", Toast.LENGTH_SHORT).show();
+                            finish();
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                         }
                     } else {
                         Toast.makeText(StudentRegister.this, "两次密码不相同", Toast.LENGTH_SHORT).show();

@@ -16,6 +16,12 @@ import com.example.pc.ilearn.tools.myOverDatabaseHelper;
 import java.sql.Date;
 import java.util.ArrayList;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 public class PeopleSingleActivity extends AppCompatActivity {
 
     TextView tv_id,tv_time,tv_date,tv_content;
@@ -35,19 +41,28 @@ public class PeopleSingleActivity extends AppCompatActivity {
         tv_date = findViewById(R.id.tv_date);
         tv_time = findViewById(R.id.tv_time);
         lv_diary =findViewById(R.id.lv_diary);
+<<<<<<< HEAD
         Bundle bundle =this.getIntent().getExtras();
 
 //        String[] mess=new String[]{bundle.getString("user")};
         String mess=bundle.getString("user");
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
         listData= new ArrayList<>();
         helper=new myOverDatabaseHelper(this);
         db=helper.getWritableDatabase();
         String table="single_people_time";
+<<<<<<< HEAD
         String select=new Date(new java.util.Date().getTime()).toString();
 
 //        String[] select=new String[]{new Date(new java.util.Date().getTime()).toString()};
         Cursor cursor = db.query(table, null, "datetoday=? and username=?",new String[]{select,mess} , null, null, null);
+=======
+        String[] select=new String[]{new Date(new java.util.Date().getTime()).toString()};
+        Cursor cursor = db.query(table, null, "datetoday=?", select, null, null, null);
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         while (cursor.moveToNext()) {//new Date(new java.util.Date().getTime()).toString()
             PeopleSingle diary = new PeopleSingle();
             diary.setId(cursor.getString(cursor.getColumnIndex("id")));

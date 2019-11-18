@@ -39,9 +39,19 @@ public class TeacherLoginActivity extends AppCompatActivity {
         //点击登录按钮跳转
         login.setOnClickListener(new View.OnClickListener() {
 
+<<<<<<< HEAD
             @Override
             public void onClick(View v) {
                 String Info = username.getText().toString();
+=======
+
+
+            @Override
+            public void onClick(View v) {
+                String Info = username.getText().toString();
+
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
 
                 String passwordInfo = password.getText().toString();
@@ -52,7 +62,11 @@ public class TeacherLoginActivity extends AppCompatActivity {
                     pi = cursor.getString(cursor.getColumnIndex("password"));//获取密码
                     //密码正确后跳转
                     if (passwordInfo.matches(pi)) {
+<<<<<<< HEAD
                         Cursor user = db.rawQuery("select tid from teacher where username=?", new String[]{Info});
+=======
+                        Cursor user = db.rawQuery("select id from teacher where username=?", new String[]{Info});
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                         if (user.moveToNext()) {
                             String usern = cursor.getString(cursor.getColumnIndex("username"));//获取用户名
 

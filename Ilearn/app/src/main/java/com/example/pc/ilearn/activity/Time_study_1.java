@@ -19,16 +19,21 @@ import com.example.pc.ilearn.R;
 import com.example.pc.ilearn.tools.myOverDatabaseHelper;
 
 import java.sql.Date;
+<<<<<<< HEAD
 /**
 * 重点：fragment以及chronometer的运用
 *
  **/
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 public class Time_study_1 extends Fragment  implements View.OnClickListener,Chronometer.OnChronometerTickListener{
     private Chronometer chronometer;
     private Button btn_start,btn_stop,btn_base,btn_pc;
     private EditText e2;
     private TextView e1;
+<<<<<<< HEAD
     Integer sum=0;
     String mess = null;
     private myOverDatabaseHelper dbHelper;
@@ -53,6 +58,29 @@ public class Time_study_1 extends Fragment  implements View.OnClickListener,Chro
     }
 //onCreateView()：每次创建、绘制该Fragment的View组件时回调该方法，Fragment将会显示该方法返回的View组件。
 //onActivityCreated()：当Fragment所在的Activity被启动完成后回调该方法。
+=======
+    String mess = null;
+   private myOverDatabaseHelper dbHelper;
+    private static boolean PAUSE =false ;
+    private long rangeTime;
+    private TextView textView;
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view=inflater.inflate(R.layout.time_study_1,container,false);
+        textView = view.findViewById(R.id.hhh);
+        //得到main_Activity数据
+        Bundle bundle =this.getArguments();
+
+        if(bundle!=null){
+            mess=bundle.getString("data");
+        }
+        textView.setText(mess);
+        //
+        return view;
+    }
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -94,6 +122,7 @@ public class Time_study_1 extends Fragment  implements View.OnClickListener,Chro
                 String today=new Date(new java.util.Date().getTime()).toString();
 
                 //插入表
+<<<<<<< HEAD
                 db.execSQL("insert into single_people_time(datetoday , llongtime , saytext,username)values(?,?,?,?)",
                         new String[]{today,e111,string,mess});
 
@@ -130,6 +159,31 @@ public class Time_study_1 extends Fragment  implements View.OnClickListener,Chro
                 db.execSQL("delete from ranklist where  datetoday!=?  " ,new Object[]{today});
 
 
+=======
+                db.execSQL("insert into single_people_time(datetoday , llongtime , saytext)values(?,?,?)",
+                        new String[]{today,e111,string});
+
+                //从数据库中获取用户名并判断是否相同
+                Cursor cursor = db.rawQuery("select username ,llongtime from all_people_today  where username=?", new String[]{mess});
+                int sum ;
+                if (cursor.moveToNext()) {
+                    Cursor cursor1 = db.rawQuery("select llongtime  from all_people_today  where username=?", new String[]{mess});
+                    sum= cursor1.getInt(cursor1.getColumnIndex("llongtime"));//获取总秒数
+                    sum+=ie11;
+                    db.execSQL("update all_people_today set llongtime="+sum+"  where username="+mess);
+
+                } else {
+                    db.execSQL("insert into all_people_today(datetoday,llongtime ,username) values('today',2,'hehe')");
+                   // Toast.makeText(getActivity(),"已单击",Toast.LENGTH_SHORT).show();
+
+
+                }
+                db.execSQL("insert into ranklist(llongtime ,username) select llongtime ,username from all_people_today " );
+                //+" Order by llongtime DESC"
+
+
+               //new Date(new java.util.Date().getTime())
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 if(Integer.valueOf(e11)<=1800){
                     String a1="咳咳，今天的学习时间太少了吧";
                     e1.setText("今日总时间："+e111);
@@ -183,6 +237,14 @@ public class Time_study_1 extends Fragment  implements View.OnClickListener,Chro
     public void onChronometerTick(Chronometer chronometer) {
         int totalss = 0;
         String string = chronometer.getText().toString();
+<<<<<<< HEAD
+=======
+       /* if(time.equals("00:00")){
+            Toast.makeText(getActivity(),"时间到了",Toast.LENGTH_SHORT).show();
+        }*/
+
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     }
     /**
      *

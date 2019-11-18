@@ -1,6 +1,9 @@
 package com.example.pc.ilearn.activity;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +16,12 @@ import com.example.pc.ilearn.entity.Student;
 
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 public class QueayStudentActivity extends AppCompatActivity {
 
@@ -43,8 +52,11 @@ public class QueayStudentActivity extends AppCompatActivity {
         Info3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 Intent intent=new Intent(QueayStudentActivity.this,Admin_Activitystu.class);
                 startActivity(intent);
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 Toast.makeText(QueayStudentActivity.this,"已单击",Toast.LENGTH_SHORT).show();
             }
         });

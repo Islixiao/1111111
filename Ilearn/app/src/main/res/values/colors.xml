@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="ii">#bc4e4e</color>
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
@@ -12,7 +15,10 @@
     <color name="red_text">#ffff0000</color>
     <color name="grey_text">#ff999999</color>
     <color name="black_text">#ff666666</color>
+<<<<<<< HEAD
     <color name="blue_dark">#233454</color>
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     <color name="blue_text">#ff007aff</color>
     <color name="vertical_sep_color">#ffcccccc</color>
     <color name="blue_fashion">#2d9fa1</color>
@@ -29,5 +35,8 @@
     <color name="text_yellow">#FFC800</color>
     <color name="text_topbar">#694E42</color>
     <color name="div_white">#E5E5E5</color>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 </resources>

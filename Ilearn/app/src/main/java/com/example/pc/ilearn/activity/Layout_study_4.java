@@ -13,7 +13,13 @@ import android.widget.Toast;
 
 import com.example.pc.ilearn.R;
 
+<<<<<<< HEAD
 
+=======
+/**
+ * Created by IT-CTY on 2018/4/25.
+ */
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 public class Layout_study_4 extends Fragment {
    private TextView textView;
@@ -91,6 +97,10 @@ public class Layout_study_4 extends Fragment {
                 bundle.putString("data",string);
                 bundle.putString("num","2");
                 intent.putExtras(bundle);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 startActivity(intent);
                 Toast.makeText(getActivity(),"已单击",Toast.LENGTH_SHORT).show();
             }
@@ -100,11 +110,14 @@ public class Layout_study_4 extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(),PeopleSingleActivity.class);
+<<<<<<< HEAD
                 Bundle bundle =new Bundle();
                 bundle.putString("user",string);
                 bundle.putString("username",username);
                 intent.putExtras(bundle);
 
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 startActivity(intent);
                 Toast.makeText(getActivity(),"已单击",Toast.LENGTH_SHORT).show();
             }

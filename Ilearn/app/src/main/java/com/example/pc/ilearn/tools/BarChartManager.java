@@ -1,7 +1,15 @@
 package com.example.pc.ilearn.tools;
 
+<<<<<<< HEAD
 import android.graphics.Color;
 import android.graphics.Typeface;
+=======
+
+
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.Log;
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
@@ -20,14 +28,25 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 //柱状图管理类
+=======
+/**
+ * Created by zhang on 2018/7/5.
+ */
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
  public class BarChartManager {
 
     private BarChart mBarChart;
     private YAxis leftAxis;
     private YAxis rightAxis;
     private XAxis xAxis;
+<<<<<<< HEAD
     private DecimalFormat mFormat;//格式化数字
+=======
+    private DecimalFormat mFormat;
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
     public BarChartManager(BarChart barChart) {
         this.mBarChart = barChart;
@@ -120,7 +139,11 @@ import java.util.List;
 //      设置宽度
         data.setBarWidth(0.3f);
         //设置X轴的刻度数
+<<<<<<< HEAD
         String[] xValues = {"信息院", "会计学院", "工商院", "旅游学院", ".. ", ".. ", ".. "};
+=======
+        String[] xValues = {"信息院", "会计学院", "工商院", "旅游学院", " ", " ", " "};
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         String[] yValues = {"91%", "92%", "93%", "94%", "95%", "96%"};
         xAxis.setLabelCount(yVals.size() + 1, true);
         xAxis.setDrawLabels(true);
@@ -130,6 +153,10 @@ import java.util.List;
         xAxis.setAxisLineColor(Color.parseColor("#d5d5d5"));
         IAxisValueFormatter custom = new MyYAxisValueFormatter(yValues);
         leftAxis.setValueFormatter(custom);
+<<<<<<< HEAD
+=======
+//        leftAxis.setLabelCount(yValues.length + 1, false);
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         leftAxis.setAxisLineColor(Color.parseColor("#d5d5d5"));
 //        设置Y轴的最小值和最大值
         leftAxis.setAxisMaximum(80f);
@@ -139,12 +166,25 @@ import java.util.List;
 
 
     public class MyYAxisValueFormatter implements IAxisValueFormatter {
+<<<<<<< HEAD
         private String[] xValues;
         public MyYAxisValueFormatter(String[] yValues) {
             xValues = yValues;
         }
         @Override
         public String getFormattedValue(float value, AxisBase axis) {
+=======
+
+        private String[] xValues;
+
+        public MyYAxisValueFormatter(String[] yValues) {
+            xValues = yValues;
+        }
+
+        @Override
+        public String getFormattedValue(float value, AxisBase axis) {
+//            Log.e("TAG", "xValues[(int) value]====="+xValues[(int) value]);
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
             return mFormat.format(value) + "%";
         }
     }
@@ -157,11 +197,26 @@ import java.util.List;
         public XAxisValueFormatter(String[] xValues) {
             this.xValues = xValues;
         }
+<<<<<<< HEAD
         @Override
         public String getFormattedValue(float value, AxisBase axis) {
             return xValues[(int) value];
         }
         }
+=======
+
+        @Override
+        public String getFormattedValue(float value, AxisBase axis) {
+            Log.e("TAG", "============"+value);
+            return xValues[(int) value];
+        }
+
+    }
+
+
+
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     /**
      * 设置描述信息
      *

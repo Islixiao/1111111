@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+=======
+    xmlns:tools="http://schemas.android.com/tools"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     >
+<<<<<<< HEAD
+=======
+
+<!--
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gray_bg">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/ly_between_text"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/text_topbar"
+            android:text="今日排行"
+            tools:ignore="NotSibling" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/div_white"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+    </RelativeLayout>
+
+-->
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     <RelativeLayout
         android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
@@ -21,7 +63,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
+<<<<<<< HEAD
                 android:text="名次"
+=======
+                android:text="ID"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 android:textSize="20sp" />
 
             <TextView
@@ -30,7 +76,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
+<<<<<<< HEAD
                 android:text="用户名"
+=======
+                android:text="时长"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 android:textSize="20sp" />
 
             <TextView
@@ -39,7 +89,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
+<<<<<<< HEAD
                 android:text="时长"
+=======
+                android:text="用户名"
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -67,6 +121,19 @@
         android:orientation="horizontal"
         android:layout_below="@id/ly_top_bar">
 
+<<<<<<< HEAD
+=======
+      <!--  <TextView
+            android:id="@+id/txt_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/text_yellow"
+            android:text="这里是排行榜内容"
+            tools:ignore="NotSibling" />
+        -->
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -76,6 +143,7 @@
             >
 
             <ListView
+<<<<<<< HEAD
                 android:id="@+id/l_diary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,6 +153,13 @@
     android:layout_height="wrap_content"
     android:text="111"
     />-->
+=======
+                android:id="@+id/lv_diary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></ListView>
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         </LinearLayout>
 
 

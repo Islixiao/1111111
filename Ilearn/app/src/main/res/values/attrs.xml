@@ -7,7 +7,11 @@
             <attr name="border_outside_color" format="color"></attr>
         </declare-styleable>
 
+<<<<<<< HEAD
     <string-array name="college" ><!--<string-array>表字符串的数组，定义多个字符串的项目，用<item>来定义每一项-->
+=======
+    <string-array name="college" >
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         <item>信息技术学院</item>
         <item>法学院</item>
         <item>会计学院</item>

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 package com.example.pc.ilearn.activity;
 
 import android.content.Intent;
@@ -28,7 +33,11 @@ public class StudentLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.student_login);
+<<<<<<< HEAD
         dbHelper = new myOverDatabaseHelper(this);//创建数据库对象
+=======
+        dbHelper = new myOverDatabaseHelper(this);
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 
 
         username = findViewById(R.id.activity_main_name_input_student);
@@ -41,14 +50,22 @@ public class StudentLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String Info = username.getText().toString();
+<<<<<<< HEAD
                 String usern ="";
+=======
+                String usern = "hh";
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 String real = "";
                 String sid = "";
                 String col = "";
                 String ma ="" ;
                 String clas = "";
+<<<<<<< HEAD
                 String year = "";
                 //getWritableDatabase()读写数据库的对象
+=======
+                String year = "";//getWritableDatabase()返回读写数据库的对象
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                 SQLiteDatabase db = dbHelper.getWritableDatabase();//打开数据库
                 //cursor每行集合，rawQuery()用于执行select语句第一个参数为select语句；第二个参数为select语句中占位符参数的值，如果select语句没有使用占位符，该参数可以设置为null。
                 Cursor cursor1 = db.rawQuery("select username,name,sid,college,major,clas,logintime from student  where username=?", new String[]{Info});
@@ -73,7 +90,11 @@ public class StudentLoginActivity extends AppCompatActivity {
                     pi = cursor.getString(cursor.getColumnIndex("password"));//获取密码
                     //密码正确后跳转
                     if (passwordInfo.matches(pi)) {
+<<<<<<< HEAD
                         Cursor user = db.rawQuery("select sid from student where username=?", new String[]{nameInfo});
+=======
+                        Cursor user = db.rawQuery("select id from student where username=?", new String[]{nameInfo});
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                         if (user.moveToNext()) {
                             Intent intent1 = new Intent(StudentLoginActivity.this, main_Activity.class);
                             // 参数传递activity-->activity
@@ -87,6 +108,10 @@ public class StudentLoginActivity extends AppCompatActivity {
                             bundle.putString("clas", clas);
                             bundle.putString("year", year);
                             intent1.putExtras(bundle);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
                             startActivity(intent1);
                             user.close();
                             cursor.close();
@@ -121,7 +146,21 @@ public class StudentLoginActivity extends AppCompatActivity {
             }
 
         });
+<<<<<<< HEAD
 
+=======
+        //忘记密码
+/*        forgetNum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(StudentLoginActivity.this, "此功能暂不支持", Toast.LENGTH_SHORT).show();
+
+
+
+
+            }
+        });*/
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     }
 }
 

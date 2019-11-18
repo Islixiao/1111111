@@ -5,4 +5,17 @@
     <string name="please_password">请输入密码</string>
     <string name="please_account">请输入账户</string>
     <string name="sure_password">请确定密码</string>
+<<<<<<< HEAD
+=======
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="tab_menu_alert">开始学习</string>
+    <string name="tab_menu_profile">学习周报</string>
+    <string name="tab_menu_pay">排行榜</string>
+    <string name="tab_menu_setting">个人信息</string>
+
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
 </resources>

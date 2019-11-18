@@ -14,7 +14,10 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/student_photo"/>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
     <EditText
         android:id="@+id/register_namestu"
         android:layout_width="wrap_content"

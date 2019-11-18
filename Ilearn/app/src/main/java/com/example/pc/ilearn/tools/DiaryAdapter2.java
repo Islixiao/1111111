@@ -51,19 +51,30 @@ public class DiaryAdapter2 extends BaseAdapter {
             LayoutInflater inflate=LayoutInflater.from(context);
             view=inflate.inflate(R.layout.listviewitem1,null);//此处layout是listview item的布局,我的命名不规范！！！
             viewholder = new ViewHolder();
+<<<<<<< HEAD
            viewholder.tv_id= (TextView)view.findViewById(R.id._id);
             viewholder.tv_time= (TextView)view.findViewById(R.id._time);
             viewholder.tv_username = (TextView)view.findViewById(R.id._name);
+=======
+            viewholder.tv_id= (TextView)view.findViewById(R.id.tv_id);
+            viewholder.tv_time= (TextView)view.findViewById(R.id.tv_time);
+            viewholder.tv_username = (TextView)view.findViewById(R.id.tv_name);
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
             view.setTag(viewholder);
         }
         viewholder = (ViewHolder)view.getTag();
         PeopleAll model = listData.get(pos);
+<<<<<<< HEAD
         int s=0;
         String ss=s+"";
 
         pos++;
          viewholder.tv_id.setText(pos+"");//model.getPid()
        //viewholder.tv_id.setText(model.getId().DisplayIndex);//model.getPid()
+=======
+        int i;
+        viewholder.tv_id.setText(model.getId());
+>>>>>>> 868d64a130a7c62213b15cf0e8dcaef59832af25
         viewholder.tv_time.setText(model.getLlongtime());
         viewholder.tv_username.setText(model.getUsername());
         return view;
